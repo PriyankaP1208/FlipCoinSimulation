@@ -16,6 +16,19 @@ echo "Tail won $tail times"
 if [ $head -eq $tail ]
 then
 	echo "Tie"
+	while [ true ]
+	do
+		num=$(( $RANDOM % 2 ))
+		echo  "$num1"
+		if [ $num1 -eq 0 ]
+		then
+			echo "$head"
+			((count++))
+		else
+			echo "$tail"
+			((count++))
+		fi
+	done
 elif [ $head -gt $tail ]
 then
 	echo "Head won"
